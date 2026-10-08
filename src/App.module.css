@@ -1,0 +1,52 @@
+.page { min-height: 100vh; padding-top: 70px; overflow: hidden; background: var(--canvas); }
+.hero { position: relative; display: grid; width: min(1080px, calc(100% - 48px)); min-height: 450px; grid-template-columns: 1fr .87fr; align-items: center; gap: 42px; margin: 0 auto; padding: 44px 0 63px; }
+.heroCopy { position: relative; z-index: 1; }
+.kicker { display: flex; align-items: center; gap: 8px; color: var(--teal-deep); font-family: var(--mono); font-size: 7px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+.kicker > span { width: 7px; height: 7px; border-radius: 2px; background: var(--teal); box-shadow: 0 0 0 4px var(--teal-soft); transform: rotate(45deg); }
+.hero h1 { margin: 20px 0 14px; color: var(--ink); font-family: var(--display); font-size: clamp(54px, 7vw, 77px); font-weight: 550; letter-spacing: -.075em; line-height: .98; }
+.hero h1 em { color: var(--teal-deep); font-weight: 500; }
+.intro { max-width: 405px; color: var(--muted); font-size: 12px; line-height: 1.75; }
+.heroActions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
+.primaryLink { display: inline-flex; min-height: 41px; align-items: center; gap: 12px; padding: 0 14px; border: 1px solid var(--teal-deep); border-radius: 5px; color: #fff; background: var(--teal-deep); font-size: 9px; font-weight: 700; transition: background-color 150ms ease, box-shadow 150ms ease; }
+.primaryLink:hover { background: #386b60; box-shadow: 0 4px 12px rgb(48 101 90 / 17%); }
+.primaryLink svg { width: 12px; height: 12px; }
+.heroActions > span { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: 8px; }
+.heroActions > span svg { width: 11px; height: 11px; color: var(--teal-deep); }
+.heroLine { display: flex; align-items: center; gap: 10px; margin-top: 35px; color: var(--muted); font-family: var(--mono); font-size: 6px; letter-spacing: .12em; }
+.heroLine i { width: 19px; height: 1px; background: var(--line-strong); }
+.heroCard { width: min(100%, 369px); justify-self: end; padding: 15px; border: 1px solid #d4e3dc; border-radius: 8px; background: #fff; box-shadow: 0 23px 58px rgb(35 70 59 / 9%); transform: rotate(1deg); }
+.cardHeader { display: flex; align-items: center; justify-content: space-between; color: #879d93; font-family: var(--mono); font-size: 6px; letter-spacing: .1em; }
+.cardHeader svg { width: 13px; height: 13px; color: var(--teal); }
+.cardMain { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-top: 21px; padding-bottom: 13px; border-bottom: 1px solid #e4eee9; }
+.cardMain > div:first-child { display: grid; gap: 3px; }
+.cardMain span, .cardStats span { color: #879d93; font-family: var(--mono); font-size: 6px; letter-spacing: .09em; }
+.cardMain strong { color: var(--ink); font-family: var(--display); font-size: 53px; font-weight: 550; letter-spacing: -.06em; line-height: 1; }
+.cardMain i { color: var(--muted); font-size: 7px; font-style: normal; }
+.miniBars { display: flex; height: 60px; align-items: flex-end; gap: 3px; padding-bottom: 2px; }
+.miniBars i { width: 7px; height: 30%; border-radius: 2px 2px 0 0; background: #b4d4c8; }
+.miniBars i:nth-child(2n) { height: 49%; background: #90bdac; }
+.miniBars i:nth-child(3n) { height: 77%; background: var(--teal); }
+.miniBars i:nth-child(5n) { height: 64%; }
+.cardStats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+.cardStats > div { display: grid; gap: 5px; }
+.cardStats b { color: var(--ink-soft); font-size: 9px; font-weight: 650; }
+.cardFooter { display: flex; align-items: center; justify-content: space-between; margin-top: 21px; padding-top: 9px; border-top: 1px solid #e4eee9; color: var(--teal-deep); font-family: var(--mono); font-size: 5px; letter-spacing: .11em; }
+.cardFooter svg { width: 12px; height: 12px; }
+.scrollCue { position: absolute; right: 0; bottom: 20px; display: flex; align-items: center; gap: 7px; color: var(--muted); font-family: var(--mono); font-size: 6px; letter-spacing: .1em; }
+.scrollCue svg { width: 12px; height: 12px; color: var(--teal); }
+.guide { width: min(1080px, calc(100% - 48px)); margin: 0 auto; padding: 40px 0 34px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
+.guideIntro { max-width: 560px; }
+.guideIntro h2 { margin-top: 8px; color: var(--ink); font-family: var(--display); font-size: clamp(28px, 4vw, 38px); font-weight: 550; letter-spacing: -.05em; }
+.guideIntro > p:last-child { max-width: 480px; margin-top: 8px; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.guideCards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 19px; }
+.guideCards article { min-height: 121px; padding: 13px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); }
+.guideCards article > span { color: var(--teal-deep); font-family: var(--mono); font-size: 6px; letter-spacing: .1em; }
+.guideCards h3 { margin-top: 14px; color: var(--ink); font-size: 10px; font-weight: 720; }
+.guideCards p { margin-top: 5px; color: var(--muted); font-size: 8px; line-height: 1.65; }
+.privacyNote { margin-top: 13px; color: var(--muted); font-size: 8px; }
+.guideFoot { display: flex; justify-content: space-between; gap: 12px; margin-top: 17px; padding-top: 11px; border-top: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: 6px; letter-spacing: .1em; }
+.guideFoot a { display: inline-flex; align-items: center; gap: 5px; color: var(--teal-deep); font-family: var(--sans); font-size: 8px; font-weight: 700; letter-spacing: 0; }
+.guideFoot svg { width: 12px; height: 12px; }
+@media (max-width: 700px) { .hero { min-height: auto; grid-template-columns: 1fr; gap: 28px; padding: 49px 0 62px; } .heroCard { width: min(100%, 410px); justify-self: center; } .scrollCue { bottom: 19px; } }
+@media (max-width: 520px) { .hero { width: calc(100% - 32px); } .hero h1 { font-size: clamp(52px, 15vw, 67px); } .heroLine { flex-wrap: wrap; margin-top: 25px; } .guide { width: calc(100% - 32px); padding-top: 31px; } .guideCards { grid-template-columns: 1fr; gap: 8px; } .guideCards article { min-height: 0; } .guideCards h3 { margin-top: 7px; } .guideFoot { align-items: flex-start; flex-direction: column; } }
+@media (prefers-reduced-motion: reduce) { .primaryLink { transition: none; } }
