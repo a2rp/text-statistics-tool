@@ -28,7 +28,7 @@ const TextAnalyzer = ({ text, onChange }) => {
             <article><span>SENTENCES</span><strong>{numberFormat.format(stats.sentences)}</strong><i>{numberFormat.format(stats.paragraphs)} paragraphs</i></article>
             <article><span>NO WHITESPACE</span><strong>{numberFormat.format(stats.charactersNoWhitespace)}</strong><i>Characters only</i></article>
           </div>
-          <div className={styles.timeStats}><div><FiClock aria-hidden="true" /><span>READING</span><strong>{stats.readingMinutes ? `${stats.readingMinutes} min` : "—"}</strong><small>at 225 words / min</small></div><div><FiClock aria-hidden="true" /><span>SPEAKING</span><strong>{stats.speakingMinutes ? `${stats.speakingMinutes} min` : "—"}</strong><small>at 130 words / min</small></div></div>
+          <div className={styles.timeStats}><div><FiClock aria-hidden="true" /><span>READING</span><strong>{stats.readingMinutes ? `${stats.readingMinutes} min` : "-"}</strong><small>at 225 words / min</small></div><div><FiClock aria-hidden="true" /><span>SPEAKING</span><strong>{stats.speakingMinutes ? `${stats.speakingMinutes} min` : "-"}</strong><small>at 130 words / min</small></div></div>
         </div>
       </div>
       <div className={styles.insights}>

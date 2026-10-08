@@ -10,12 +10,12 @@ const App = () => {
   const [text, setText] = useState("");
 
   return (
-    <div className={styles.page} id="top">
+    <div className={styles.appShell} id="top">
       <SiteHeader />
       <main>
         <section className={styles.hero} aria-labelledby="hero-title">
           <div className={styles.heroCopy}>
-            <p className={styles.kicker}><span /> A little perspective for the page</p>
+            <p className={styles.contextLabel}><span /> A little perspective for the page</p>
             <h1 id="hero-title">Make the words<br /><em>add up.</em></h1>
             <p className={styles.intro}>A quiet place to see how much you have written. Count the words, check the pace, and find the phrases that keep returning.</p>
             <div className={styles.heroActions}><a className={styles.primaryLink} href="#studio">Analyze some text <FiArrowDown aria-hidden="true" /></a><span><FiFeather aria-hidden="true" /> Writing stays in your tab</span></div>
@@ -31,7 +31,7 @@ const App = () => {
         </section>
         <TextAnalyzer text={text} onChange={setText} />
         <section className={styles.guide} id="guide" aria-labelledby="guide-title">
-          <div className={styles.guideIntro}><p className={styles.kicker}>READING THE COUNTS</p><h2 id="guide-title">A useful map of the page.</h2><p>Counts describe different things. Use them together as a quick overview, then let your own voice decide what stays.</p></div>
+          <div className={styles.guideIntro}><p className={styles.contextLabel}>READING THE COUNTS</p><h2 id="guide-title">A useful map of the page.</h2><p>Counts describe different things. Use them together as a quick overview, then let your own voice decide what stays.</p></div>
           <div className={styles.guideCards}>
             <article><span>01 / WORDS</span><h3>A practical word count</h3><p>Letter and number groups count as words. Apostrophes inside a word stay together; hyphens split words.</p></article>
             <article><span>02 / TIME</span><h3>A rough reading pace</h3><p>Estimates use 225 words per minute for reading and 130 for speaking. Real pace depends on the person and material.</p></article>
