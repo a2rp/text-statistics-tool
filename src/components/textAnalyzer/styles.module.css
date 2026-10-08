@@ -95,7 +95,7 @@
     background: var(--surface);
     font-size: 7px;
     cursor: pointer;
-    transition: color 150ms ease, border-color 150ms ease;
+    transition: border-color 150ms ease;
   }
   .editorHeading button:hover:not(:disabled) {
     border-color: var(--teal);
